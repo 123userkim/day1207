@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	/*
+		1)photo의 위쪽 바깥 여백을 50, 왼쪽 바깥여백을 100으로 설정
+		2)사진에 마우스가 올라가면 1.5배 커지도록 하고, 테두리에 그림자 설정하기
+			이때 변형의 기준을 왼쪽, 위를 기준으로 하기
+	*/
+	
+	.photo{
+		margin-top: 50px;
+		margin-left: 100px;
+	}
+	.photo:hover{
+		transform-origin : left top;
+		transform : scale(1.5);
+		box-shadow: 1px 1px 1px 1px;
+		transition : 2s;
+	}
+	
+</style>
+</head>
+<body>
+	<img src="images/lamp.jpg" width="250" height="188" class="photo">
+</body>
+</html>

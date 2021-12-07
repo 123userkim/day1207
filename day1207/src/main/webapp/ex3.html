@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	/*
+		1)container의 가로길이 500, 가운데 배치
+		2)photo에는 임의의 테두리 설정
+	
+	*/
+	.container{
+		width: 500px;
+		margin : 50px auto;
+	}
+	.container img{
+		border: 1px solid black;
+	}
+	.container img:hover{
+		border-radius: 30px;
+		transform: rotate(20deg);
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<img src="images/coffee.jpg" class="photo">
+	</div>
+</body>
+</html>
